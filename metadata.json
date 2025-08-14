@@ -1,0 +1,5 @@
+{
+  "name": "TEST SUPABASE",
+  "description": "A web application to rewrite, generate, and manage movie scripts using AI. Automatically create titles, summaries, and timelines.",
+  "requestFramePermissions": []
+}
