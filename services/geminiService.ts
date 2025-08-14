@@ -3,7 +3,7 @@ import { GoogleGenAI, Type } from "@google/genai";
 import type { GenerateContentResponse } from "@google/genai";
 import type { Chapter, ScriptChunk } from '../types';
 
-const MODEL_NAME = 'gemini-2.5-flash';
+const MODEL_NAME = 'gemini-2.5-pro';
 const OPENROUTER_MODEL_NAME = 'google/gemini-2.5-pro';
 
 type Provider = 'gemini' | 'openrouter';
@@ -15,6 +15,7 @@ export interface ProviderConfig {
 }
 
 // Helper to parse the new YouTube-style timeline format
+
 const parseTimeline = (rawTimeline: string): Chapter[] => {
     const chapters: Chapter[] = [];
     // Regex to match "00:00 – Chapter Title"
