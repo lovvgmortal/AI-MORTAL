@@ -4,7 +4,7 @@ import type { GenerateContentResponse } from "@google/genai";
 import type { Chapter, ScriptChunk } from '../types';
 
 const MODEL_NAME = 'gemini-2.5-flash';
-const OPENROUTER_MODEL_NAME = 'google/gemini-2.5-flash';
+const OPENROUTER_MODEL_NAME = 'google/gemini-2.5-pro';
 
 type Provider = 'gemini' | 'openrouter';
 
