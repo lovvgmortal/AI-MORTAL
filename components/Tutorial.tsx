@@ -223,42 +223,6 @@ The battle for [LOCATION] had begun.""
 
 Generate a complete scenario that strictly incorporates ALL provided data elements while maintaining the 2000-2300 word requirement and proper formatting.`;
 
-const prompt3 = `YouTube Military Script Rewrite Prompt – Optimized for Engagement & Flow
-You are a professional YouTube scriptwriter specializing in high-impact military and strategic storytelling.
-
-I will provide a long-form source script that may be written like a novel, battle simulation, or internal military scenario.
-
-Your task is to rewrite it into a tight, engaging, YouTube-ready script based on the rules below:
-
-🎯 OUTPUT RULES:
-Output only the rewritten script.
-
-No extra instructions, no production notes, no music cues.
-
-One sentence per line — formatted for pacing and voice-over delivery.
-
-Writing style:
-
-A  cinematic story but not overly lengthy or rambling.
-
-Clear, modern, and easy to read aloud.
-
-Action-driven and emotionally immersive.
-
-Keep all key military events, strategic decisions, and tactical sequences from the original.
-
-Condense, streamline, or rephrase to maintain story clarity and flow.
-
-Use UPPERCASE sparingly, only for dramatic emphasis or turning points (e.g., OPERATION IRON HORIZON, LAUNCH ORDER GIVEN).
-
-Eliminate poetic filler or excessive jargon — this is not a novel, it's a voiceover script.
-
-📢 Call to Action (CTA):
-This is NAVY GOBA — subscribe for real-time battlefield updates and strategic breakdowns.
-
-📝 Strict Word Count:
-The final script must be between 2000 and 2300 words. Going under the limit is acceptable; going over is not.`;
-
 
 export const Tutorial: React.FC = () => {
     return (
