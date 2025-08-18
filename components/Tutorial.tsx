@@ -244,9 +244,6 @@ export const Tutorial: React.FC = () => {
                     <PromptToggle title="Prompt for Step 2: Generating Full Script">
                         {prompt2}
                     </PromptToggle>
-                    <PromptToggle title="Prompt for Rewrite Mode: Professional YouTube Style">
-                        {prompt3}
-                    </PromptToggle>
                 </div>
             </TutorialSection>
         </div>
