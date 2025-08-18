@@ -69,159 +69,171 @@ const PromptToggle: React.FC<{ title: string; children: React.ReactNode }> = ({ 
 const prompt1 = `You are a military analyst with 20 years of experience in modern warfare research. 
 Your task is to create a completely fictional but highly realistic combat scenario in terms of technical and tactical accuracy. 
 Use your knowledge of modern weapons, real geography, and combat principles to generate credible information. 
-Provide information only in the following standard format, do not add or omit other content:
- BASIC INFORMATION: 
-    Date: [Specific date from 2024-2026], 
-    Location: [Specific city/village/region name],
-    Attacking side: [Country/force], 
-    Defending side: [Country/force]. 
- ATTACK SCALE: 
-    Tanks: [Number + specific type like T-90M, T-80BVM], 
-    Infantry: [Estimated number], 
-    UAV: [Specific names like Orlan-10, Lancet-3], 
-    Artillery: [Type like Tornado-S, Grad], 
-    Scale: [Small/Medium/Large]. 
- DEFENSIVE WEAPONS: 
-    Tanks: [Type like Leopard 2A6, Challenger 2], 
-    Anti-tank missiles: [Javelin, NLAW, TOW, etc.], 
-    Radar: [AN/TPQ-50, NASAMS],
-    Artillery: [HIMARS, M777, Caesar], 
-    UAV: [Switchblade, TB2]. 
- COMBAT RESULTS: 
-    Duration: [Specific minutes/hours/days], 
-    Attacker losses: [Personnel + equipment numbers], 
-    Defender losses: [Personnel + equipment numbers], 
-    Outcome: [Which side won + degree]. 
- TACTICAL FEATURES: 
-    Main tactics: [Brief description], 
-    Key technology: [Critical weapon/system], 
-    Decisive factors: [Reasons for victory/defeat], 
-    Unique characteristics: [What was special]. 
- STRATEGIC LESSONS: 
-    Main lessons: [Insights about modern warfare], 
-    Importance: [Significance for world military], 
-    Message: [Message sent to major powers].`;
+Provide information only in the following standard format, do not add or omit other content. Use "N/A" for any category that does not apply to your scenario:
 
-const prompt2 = `You are an elite military analyst and combat correspondent with 25+ years of experience covering modern warfare. Your mission is to create a completely fictional but tactically realistic military scenario that is EXACTLY 2000-2300 words.
+## BASIC INFORMATION:
+- Date: [Specific date from 2024-2026]
+- Location: [Specific city/village/region name]
+- Attacking side: [Country/force]
+- Defending side: [Country/force]
+
+## GROUND FORCES:
+
+### ATTACK SCALE:
+- Tanks: [Number + specific type like T-90M, T-80BVM]
+- Infantry: [Estimated number]
+- UAV: [Specific names like Orlan-10, Lancet-3]
+- Artillery: [Type like Tornado-S, Grad]
+- Scale: [Small/Medium/Large]
+
+### DEFENSIVE WEAPONS:
+- Tanks: [Type like Leopard 2A6, Challenger 2]
+- Anti-tank missiles: [Javelin, NLAW, TOW, etc.]
+- Radar: [AN/TPQ-50, NASAMS]
+- Artillery: [HIMARS, M777, Caesar]
+- UAV: [Switchblade, TB2]
+
+## NAVAL FORCES:
+- Ships: [Type + number, or N/A]
+- Submarines: [Class + capability, or N/A]
+- Naval missiles: [Anti-ship, cruise missiles, or N/A]
+- Maritime air defense: [Systems deployed, or N/A]
+
+## AIR FORCES:
+- Fighter aircraft: [Type + numbers, or N/A]
+- Bombers: [Strategic/tactical, or N/A]
+- Air defense: [SAM systems, interceptors]
+- Electronic warfare: [Jamming, countermeasures, or N/A]
+
+## CYBER & ELECTRONIC WARFARE:
+- Cyber operations: [Network attacks, disruptions, or N/A]
+- Electronic jamming: [GPS, communications, radar, or N/A]
+- Information warfare: [Propaganda, disinformation, or N/A]
+
+## STRATEGIC WEAPONS:
+- Long-range missiles: [Ballistic, cruise, or N/A]
+- Space assets: [Satellites, anti-satellite, or N/A]
+
+## COMBAT RESULTS:
+- Duration: [Specific minutes/hours/days]
+- Attacker losses: [Personnel + equipment numbers]
+- Defender losses: [Personnel + equipment numbers]
+- Outcome: [Which side won + degree]
+
+## TACTICAL FEATURES:
+- Main tactics: [Brief description]
+- Key technology: [Critical weapon/system]
+- Decisive factors: [Reasons for victory/defeat]
+- Unique characteristics: [What was special]
+
+## STRATEGIC LESSONS:
+- Main lessons: [Insights about modern warfare]
+- Importance: [Significance for world military]
+- Message: [Message sent to major powers]
+`;
+
+const prompt2 = `You are an elite military analyst and combat correspondent with 25+ years of experience covering modern warfare.  
+Your mission is to create a completely fictional but tactically realistic military scenario that is EXACTLY 2000-2300 words.  
 
 ## Critical Length Requirements
-
-**WORD COUNT ENFORCEMENT:**
-- The scenario MUST be between 2000-2300 words - this is non-negotiable
-- Count every word carefully to ensure you meet this requirement
-- If your first draft is too short, expand with more tactical details, specific weapon descriptions, additional combat phases, and deeper analysis
-- Include extensive technical specifications, multiple engagement phases, detailed casualty reports, and comprehensive strategic analysis
+- The scenario MUST be between 2000-2300 words - this is non-negotiable.  
+- Count every word carefully to ensure you meet this requirement.  
+- If your first draft is too short, expand with more tactical details, specific weapon descriptions, additional combat phases, and deeper analysis.  
+- Include extensive technical specifications, multiple engagement phases, detailed casualty reports, and comprehensive strategic analysis.  
 
 ## Mandatory Data Integration Requirements
+- Date: [Insert specific date]  
+- Time: [Insert specific time]  
+- Location: [Insert location]  
+- Attacking side: [Insert attacking force]  
+- Defending side: [Insert defending force]  
+- Scale: [Insert scale]  
+- Key weapons: [Insert weapon systems]  
 
-**MUST USE PROVIDED DATA:**
-- Date: [Insert specific date] - MUST be included exactly as provided
-- Time: [Insert specific time] - MUST include exact time with ""local time"" format
-- Location: [Insert location] - MUST use exact location names provided
-- Attacking side: [Insert attacking force] - MUST use exact force designation
-- Defending side: [Insert defending force] - MUST use exact force designation
-- Scale: [Insert scale] - MUST incorporate the specified scale
-- Key weapons: [Insert weapon systems] - MUST feature the specified weapons prominently
+**TIMELINE REQUIREMENTS:**  
+- Open with exact date and time: "On [DATE], at [TIME] local time..."  
+- Include clear time progression throughout the scenario.  
+- Use specific timestamps for major events (e.g., "At 06:45 local time...", "By 14:30...").  
+- Show battle duration clearly from start to finish.  
 
-**TIMELINE REQUIREMENTS:**
-- Open with exact date and time: ""On [DATE], at [TIME] local time...""
-- Include clear time progression throughout the scenario
-- Use specific timestamps for major events (e.g., ""At 06:45 local time..."", ""By 14:30..."")
-- Show battle duration clearly from start to finish
-
-**OUTPUT FORMAT:**
-- Each sentence must be on a separate line
-- Use CAPITAL LETTERS only for key tactical terms, weapons, locations, and critical moments
-- Strategic capitalization - do not overuse
-- NO section headers in the output - pure narrative only
-- Start directly with the scenario using provided data
-- End with CTA including [insert channel youtube]
+## Output Format
+- Each sentence must be on a separate line.  
+- Use CAPITAL LETTERS only for key tactical terms, weapons, locations, and critical moments.  
+- Strategic capitalization - do not overuse.  
+- NO section headers in the output - pure narrative only.  
+- Start directly with the scenario using provided data.  
 
 ## Content Development Strategy
+- Technical weapon specifications and performance data.  
+- Multiple engagement phases with specific timelines.  
+- Detailed casualty reports and equipment losses.  
+- Extensive tactical maneuvering descriptions.  
+- Electronic warfare and communications disruption.  
+- Supply chain and logistics complications.  
+- Weather and terrain impact on operations.  
+- Individual unit actions and heroic moments.  
+- Command decision-making processes.  
+- Intelligence gathering and reconnaissance details.  
+- Air support and helicopter operations.  
+- Medical evacuation and battlefield medicine.  
+- Engineering and demolition activities.  
+- Counter-intelligence and special operations.  
+- Post-battle analysis and lessons learned.  
 
-**EXPAND WITH DETAILED ELEMENTS:**
-- Technical weapon specifications and performance data
-- Multiple engagement phases with specific timelines
-- Detailed casualty reports and equipment losses
-- Extensive tactical maneuvering descriptions
-- Electronic warfare and communications disruption
-- Supply chain and logistics complications
-- Weather and terrain impact on operations
-- Individual unit actions and heroic moments
-- Command decision-making processes
-- Intelligence gathering and reconnaissance details
-- Air support and helicopter operations
-- Medical evacuation and battlefield medicine
-- Engineering and demolition activities
-- Counter-intelligence and special operations
-- Post-battle analysis and lessons learned
-
-**NARRATIVE PHASES TO INCLUDE:**
-1. Initial intelligence and preparation (200-250 words)
-2. Opening barrage and first contact (350-400 words)
-3. Main assault and armored engagement (400-500 words)
-4. Technology warfare and drone operations (300-400 words)
-5. Electronic warfare and communications battle (250-300 words)
-6. Decisive phase and turning point (300-350 words)
-7. Aftermath and strategic implications (200-250 words)
-8. Call-to-action conclusion
+**Narrative phases to include:**  
+1. Initial intelligence and preparation (200-250 words)  
+2. Opening barrage and first contact (350-400 words)  
+3. Main assault and armored engagement (400-500 words)  
+4. Technology warfare and drone operations (300-400 words)  
+5. Electronic warfare and communications battle (250-300 words)  
+6. Decisive phase and turning point (300-350 words)  
+7. Aftermath and strategic implications (200-250 words)  
+8. Call-to-action conclusion with emotional impact  
 
 ## Style Guidelines
-
-**SENTENCE STRUCTURE:** One complete sentence per line
-**CAPITALIZATION:** Strategic use for:
-- Key weapon systems and vehicles
-- Critical locations and tactical positions  
-- Dramatic moments and decisive actions
-- Important military terminology
-- Do NOT capitalize common words like ""the,"" ""and,"" ""was,"" etc.
-
-**TONE:** Professional military analysis with dramatic battlefield narrative
-**PERSPECTIVE:** Third-person with tactical insight
-**PACING:** Build tension through escalating phases
-
-## Example Style:
-
-""The earth trembled.
-At precisely 04:17 local time, RUSSIAN forces unleashed their opening BARRAGE.
-TORNADO-S missile systems opened FIRE across the DONBAS front.
-Over fifty heavy MISSILES slammed into UKRAINIAN positions within thirty minutes.
-LEOPARD 2A6 tanks responded with devastating 120mm rounds.
-The battle for KURAKOV had begun.""
+- **Sentence structure:** One complete sentence per line.  
+- **Capitalization:** For weapons, units, key tactical moments.  
+- **Tone:** Professional military analysis with dramatic battlefield narrative.  
+- **Perspective:** Third-person with tactical insight.  
+- **Pacing:** Build tension through escalating phases.  
 
 ## Call-To-Action (CTA) Requirements
+You must integrate **multi-layered CTAs** throughout the script:  
 
-**END WITH CTA SECTION:**
-After the main narrative, include a compelling call-to-action that:
-- Poses a thought-provoking question about modern warfare
-- Encourages engagement and subscription
-- References the channel: [insert channel youtube]
-- Maintains the serious, analytical tone
+1. **Early Retention CTA (after the initial hook, ~150 words in):**  
+   - Invite the audience to comment and reflect.  
+   - Example: *"Before we continue, tell me where in the world you are watching from — and let’s step deeper into the battlefield."*  
 
-**CTA FORMAT:**
-- 2-3 sentences maximum
-- One rhetorical question about warfare implications
-- Direct subscription call with channel reference
-- Professional military analysis tone
+2. **Mid-battle CTA (after a turning point):**  
+   - Tie like/subscribe to emotion (pride, humanity, fear).  
+   - Example: *"Still watching? Good. Because what comes next isn’t just about firepower — it’s about survival. If you stand with those who fight against the odds, hit like and subscribe."*  
 
-**Example CTA Style:**
-""Is the future of WARFARE already here?
-This is [insert channel youtube] — subscribe for real-time battlefield updates and strategic insights.""
+3. **Optional Surprise CTA (during climax):**  
+   - Add urgency or patriotism.  
+   - Example: *"No mercy. No retreat. If you believe in strength and resilience, share this story so more people see the truth."*  
 
-**EXAMPLE OPENING FORMAT:**
-""On July 15th, 2025, at 04:17 AM local time, the silence over [LOCATION] was shattered.
-RUSSIAN forces unleashed their opening BARRAGE against UKRAINIAN positions.
-The battle for [LOCATION] had begun.""
+4. **Final CTA (conclusion):**  
+   - Must combine 3 things:  
+     - A **thought-provoking question** about the future of warfare.  
+     - A **direct call to subscribe/share/comment**.  
+     - A **reference to [insert channel youtube]**.  
+   - Example:  
+     *"In an age of drones, cyber warfare, and shifting alliances, is the battlefield evolving faster than we can prepare for?  
+     This is [insert channel youtube] — subscribe, share, and join the discussion as we uncover the future of modern warfare."*  
 
-**MANDATORY PROGRESSION:**
-- Use provided data as foundation for entire scenario
-- Build timeline around the specific date/time given
-- Reference attacking/defending forces exactly as provided
-- Feature specified weapons systems as key elements
-- Maintain chronological progression with clear timestamps
-- Every major phase must have specific time markers
+## Example Opening
+"On July 15th, 2025, at 04:17 AM local time, the silence over [LOCATION] was shattered.  
+RUSSIAN forces unleashed their opening BARRAGE against UKRAINIAN positions.  
+The battle for [LOCATION] had begun."  
 
-Generate a complete scenario that strictly incorporates ALL provided data elements while maintaining the 2000-2300 word requirement and proper formatting.`;
+## Mandatory Progression
+- Use provided data as foundation for entire scenario.  
+- Build timeline around the specific date/time given.  
+- Reference attacking/defending forces exactly as provided.  
+- Feature specified weapons systems as key elements.  
+- Maintain chronological progression with clear timestamps.  
+- Every major phase must have specific time markers.  
+`;
 
 
 export const Tutorial: React.FC = () => {
