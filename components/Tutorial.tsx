@@ -238,10 +238,10 @@ The battle for [LOCATION] had begun."
 
 export const Tutorial: React.FC = () => {
     return (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="max-w-[95vw] mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="text-center mb-10">
                 <Icon name="book" className="mx-auto w-16 h-16 text-brand-primary mb-4" />
-                <h1 className="text-4xl font-bold text-brand-text">Advanced Prompt Guide</h1>
+                <h1 className="text-2xl font-bold text-brand-text">Advanced Prompt Guide</h1>
                 <p className="text-lg text-brand-text-secondary mt-2">A collection of expert prompts for advanced script generation.</p>
             </div>
 
@@ -261,3 +261,4 @@ export const Tutorial: React.FC = () => {
         </div>
     );
 };
+
