@@ -132,49 +132,69 @@ Provide information only in the following standard format, do not add or omit ot
 - Message: [Message sent to major powers]
 `;
 
-const prompt2 = `# Military Script Generation 
-Create a fictional but realistic military scenario of EXACTLY 3200-3500 words using the provided combat data.
+const prompt2 = `
+
+# Military Script Generation - Final Prompt
+
+Create a fictional but realistic military scenario of EXACTLY 3700-4000 words using the provided combat data.
+
 ## Core Requirements
-- **Length:** 3200-3500 words (non-negotiable)
+- **Length:** 3700-4000 words (minimum 3700, maximum 4000 - non-negotiable)
 - **Format:** Each sentence on separate line
 - **Capitalization:** Strategic use for weapons, locations, key moments only
 - **Data Rule:** Use ONLY equipment and forces specified in provided data
 - **Style:** Pure narrative, no section headers
+
 ## 30-Second Hook Opening
 Lines 1-2: Shocking statistics (duration, equipment value, casualties from data)
 Lines 3-4: Create paradox ("But the most shocking part wasn't...")
 Lines 5-6: Promise revelation ("Today, I'll show you how...")
 Line 7: Challenge viewer
+
 Example: "In [duration], [equipment value] destroyed. [Outcome statistics]. But the most shocking part wasn't the speed—it was HOW [attacking force] achieved [result]. Today, I'll show you the [technology] that redefined warfare at [location]."
-## Content Structure for 3200-3500 Words
-**Pre-Battle Intelligence (400-500 words):**
+
+## Content Structure for 3700-4000 Words
+
+**Pre-Battle Intelligence (500-600 words):**
 - Surveillance using provided sensor systems
 - Command planning with provided forces
 - Equipment preparation for provided weapons
 - Personnel briefings for provided mission
 - Environmental analysis at provided location
-**Multi-Phase Combat (1200-1500 words):**
-- Phase 1: Initial detection/contact (300-400 words)
-- Phase 2: Primary engagement escalation (400-500 words)
-- Phase 3: Decisive turning point (300-400 words)
-- Phase 4: Resolution and aftermath (200-300 words)
-**Character Deep Dives (600-800 words):**
+
+**Multi-Phase Combat (1400-1600 words):**
+- Phase 1: Initial detection/contact (400-450 words)
+- Phase 2: Primary engagement escalation (500-550 words)
+- Phase 3: Decisive turning point (350-400 words)
+- Phase 4: Resolution and aftermath (150-200 words)
+
+**Character Deep Dives (750-900 words):**
 - Minimum 3 named personnel operating provided systems
 - Technical procedures with provided equipment
 - Decision-making under combat stress
 - Radio communications and coordination
 - Medical response reflecting provided casualties
-**Technical Analysis (400-500 words):**
+
+**Technical Analysis (500-600 words):**
 - Detailed performance of provided weapon systems
 - Electronic warfare (if in provided data)
 - Supply and logistics challenges
 - Communication protocols
 - Equipment maintenance under fire
-**Strategic Implications (300-400 words):**
+
+**Strategic Implications (400-500 words):**
 - International response considerations
 - Long-term consequences for provided region
 - Military doctrine evolution
 - Economic costs and impacts
+
+## Critical Length Control
+- MINIMUM 3700 words required - expand sections if needed
+- MAXIMUM 4000 words - stop immediately when approaching this limit
+- Count words carefully throughout writing process
+- If content is short, expand existing sections with more detail
+- If approaching maximum, conclude efficiently
+
 ## Character Framework
 Create personnel appropriate to provided combat type:
 - Operators of provided weapon systems
@@ -183,27 +203,37 @@ Create personnel appropriate to provided combat type:
 - Intelligence officers
 - Communications specialists
 - Maintenance crews
+
 Each with personal stakes, technical expertise, and decision moments affecting provided battle outcome.
+
 ## Audience Engagement (Minimum 3 Points)
+
 Integrate natural engagement throughout the narrative flow:
+
 **Early Retention (~200 words):** Geographic/personal connection
 "Before we dive into [location], tell me where you're watching from—because what [forces] unleashed next changed everything about [weapon category]."
+
 **Mid-Story Engagement (at major turning points):** Emotional connection + subscription
 "Still here? What happens next isn't just [technology]—it's split-second decisions that controlled [location]. If you're fascinated by modern warfare, hit like and subscribe."
+
 **Additional Engagement (as story demands):** Use at natural peaks
 - After shocking revelations
 - During technology demonstrations  
 - At human drama moments
 - Before decisive phases
-**Final Call-to-Action:** Future question + channel promotion
-"As [weapon systems] proved dominance at [location], will [technology] change how militaries approach [warfare type]? This is NAVY GOBA —subscribe and join us analyzing tomorrow's conflicts."
+
+**Final Call-to-Action:** Thought-provoking question only
+"As [weapon systems] demonstrated their capabilities at [location], what does this mean for the future of [warfare type]?"
+
 Place additional engagement points organically based on story intensity and narrative peaks.
+
 ## Technical Requirements
 - Performance specs of provided systems
 - Operational procedures under combat stress
 - Human factors with provided technology
 - Logistical requirements for provided deployment
 - Communication protocols between provided units
+
 ## Essential Scenes
 - Deployment of provided forces
 - Operation of provided weapons under stress
@@ -211,12 +241,14 @@ Place additional engagement points organically based on story intensity and narr
 - Command decisions affecting provided outcome
 - Medical treatment matching provided casualties
 - Strategic assessment with provided results
+
 ## Timeline Compliance
 - Use provided engagement duration exactly
 - Reference provided casualty figures accurately
 - Feature provided decisive factors
 - Reflect provided strategic lessons
 - End with provided significance to broader conflict
+
 ## Expansion Techniques for Word Count
 - Include detailed dialogue between system operators
 - Describe step-by-step technical procedures
@@ -226,6 +258,7 @@ Place additional engagement points organically based on story intensity and narr
 - Add intelligence analysis and assessment scenes
 - Show maintenance and supply operations
 - Detail communication intercepts and analysis
+
 Build chronologically using provided timeline, focus all details on provided systems, ensure characters operate provided equipment only, and connect provided results to future warfare implications.
 
 `;
