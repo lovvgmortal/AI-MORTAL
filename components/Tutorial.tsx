@@ -132,7 +132,7 @@ Provide information only in the following standard format, do not add or omit ot
 - Message: [Message sent to major powers]
 `;
 
-const prompt2 = `# Military Script Generation - Final Prompt
+const prompt2 = `# Military Script Generation 
 Create a fictional but realistic military scenario of EXACTLY 3200-3500 words using the provided combat data.
 ## Core Requirements
 - **Length:** 3200-3500 words (non-negotiable)
@@ -196,7 +196,7 @@ Integrate natural engagement throughout the narrative flow:
 - At human drama moments
 - Before decisive phases
 **Final Call-to-Action:** Future question + channel promotion
-"As [weapon systems] proved dominance at [location], will [technology] change how militaries approach [warfare type]? This is [channel name]—subscribe and join us analyzing tomorrow's conflicts."
+"As [weapon systems] proved dominance at [location], will [technology] change how militaries approach [warfare type]? This is NAVY GOBA —subscribe and join us analyzing tomorrow's conflicts."
 Place additional engagement points organically based on story intensity and narrative peaks.
 ## Technical Requirements
 - Performance specs of provided systems
