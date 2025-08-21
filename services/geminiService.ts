@@ -152,7 +152,7 @@ Your task is to write a concise summary of the script below.
 ✅ Output Requirements:
 
 Output only one summary paragraph
-The summary must be no more than 120 words
+The summary must be no more than 100 words
 Use clear, neutral language appropriate for the content type
 Focus on main events, key points, timeline, and significance
 Do not include quotes, dialogue, or minor details
