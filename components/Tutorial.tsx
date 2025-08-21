@@ -146,12 +146,25 @@ Create a fictional but realistic military scenario of EXACTLY 3700-4000 words us
 - **Style:** Pure narrative, no section headers
 
 ## 30-Second Hook Opening
-Lines 1-2: Shocking statistics (duration, equipment value, casualties from data)
-Lines 3-4: Create paradox ("But the most shocking part wasn't...")
-Lines 5-6: Promise revelation ("Today, I'll show you how...")
-Line 7: Challenge viewer
+Start with maximum impact using the provided data:
+Structure (7 lines total):
 
-Example: "In [duration], [equipment value] destroyed. [Outcome statistics]. But the most shocking part wasn't the speed—it was HOW [attacking force] achieved [result]. Today, I'll show you the [technology] that redefined warfare at [location]."
+Line 1: Time shock ("In [exact duration from data]...")
+Line 2: Destruction scale ("[equipment value/casualties from data]...")
+Line 3: Setup paradox ("But the most devastating part wasn't...")
+Line 4: Reveal true shock ("It was [key provided element]...")
+Line 5: Promise insight ("Today, I'll show you exactly how...")
+Line 6: Technology/strategy reveal ("[provided weapon/tactic] changed everything...")
+Line 7: Location/stakes ("At [provided location], the rules of warfare were rewritten.")
+
+Example Framework:
+"In [provided duration], [provided equipment value] vaporized.
+[Provided casualty/destruction numbers] in a matter of [timeframe].
+But the most devastating part wasn't the speed of destruction.
+It was how [provided attacking force] achieved total [provided outcome] against [provided defending force].
+Today, I'll show you exactly how [provided key technology] turned [provided location] into a proving ground.
+[Provided weapon system] didn't just win the battle—it redefined what modern warfare looks like.
+At [provided location], on [provided date], the future arrived in [provided duration]."
 
 ## Content Structure for 3700-4000 Words
 
