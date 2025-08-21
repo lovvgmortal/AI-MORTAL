@@ -132,107 +132,102 @@ Provide information only in the following standard format, do not add or omit ot
 - Message: [Message sent to major powers]
 `;
 
-const prompt2 = `You are an elite military analyst and combat correspondent with 25+ years of experience covering modern warfare.  
-Your mission is to create a completely fictional but tactically realistic military scenario that is EXACTLY 2000-2300 words.  
+const prompt2 = `# Military Script Generation - Final Prompt
+Create a fictional but realistic military scenario of EXACTLY 3200-3500 words using the provided combat data.
+## Core Requirements
+- **Length:** 3200-3500 words (non-negotiable)
+- **Format:** Each sentence on separate line
+- **Capitalization:** Strategic use for weapons, locations, key moments only
+- **Data Rule:** Use ONLY equipment and forces specified in provided data
+- **Style:** Pure narrative, no section headers
+## 30-Second Hook Opening
+Lines 1-2: Shocking statistics (duration, equipment value, casualties from data)
+Lines 3-4: Create paradox ("But the most shocking part wasn't...")
+Lines 5-6: Promise revelation ("Today, I'll show you how...")
+Line 7: Challenge viewer
+Example: "In [duration], [equipment value] destroyed. [Outcome statistics]. But the most shocking part wasn't the speed—it was HOW [attacking force] achieved [result]. Today, I'll show you the [technology] that redefined warfare at [location]."
+## Content Structure for 3200-3500 Words
+**Pre-Battle Intelligence (400-500 words):**
+- Surveillance using provided sensor systems
+- Command planning with provided forces
+- Equipment preparation for provided weapons
+- Personnel briefings for provided mission
+- Environmental analysis at provided location
+**Multi-Phase Combat (1200-1500 words):**
+- Phase 1: Initial detection/contact (300-400 words)
+- Phase 2: Primary engagement escalation (400-500 words)
+- Phase 3: Decisive turning point (300-400 words)
+- Phase 4: Resolution and aftermath (200-300 words)
+**Character Deep Dives (600-800 words):**
+- Minimum 3 named personnel operating provided systems
+- Technical procedures with provided equipment
+- Decision-making under combat stress
+- Radio communications and coordination
+- Medical response reflecting provided casualties
+**Technical Analysis (400-500 words):**
+- Detailed performance of provided weapon systems
+- Electronic warfare (if in provided data)
+- Supply and logistics challenges
+- Communication protocols
+- Equipment maintenance under fire
+**Strategic Implications (300-400 words):**
+- International response considerations
+- Long-term consequences for provided region
+- Military doctrine evolution
+- Economic costs and impacts
+## Character Framework
+Create personnel appropriate to provided combat type:
+- Operators of provided weapon systems
+- Electronic warfare specialists (if applicable)
+- Medical personnel
+- Intelligence officers
+- Communications specialists
+- Maintenance crews
+Each with personal stakes, technical expertise, and decision moments affecting provided battle outcome.
+## Audience Engagement (Minimum 3 Points)
+Integrate natural engagement throughout the narrative flow:
+**Early Retention (~200 words):** Geographic/personal connection
+"Before we dive into [location], tell me where you're watching from—because what [forces] unleashed next changed everything about [weapon category]."
+**Mid-Story Engagement (at major turning points):** Emotional connection + subscription
+"Still here? What happens next isn't just [technology]—it's split-second decisions that controlled [location]. If you're fascinated by modern warfare, hit like and subscribe."
+**Additional Engagement (as story demands):** Use at natural peaks
+- After shocking revelations
+- During technology demonstrations  
+- At human drama moments
+- Before decisive phases
+**Final Call-to-Action:** Future question + channel promotion
+"As [weapon systems] proved dominance at [location], will [technology] change how militaries approach [warfare type]? This is [channel name]—subscribe and join us analyzing tomorrow's conflicts."
+Place additional engagement points organically based on story intensity and narrative peaks.
+## Technical Requirements
+- Performance specs of provided systems
+- Operational procedures under combat stress
+- Human factors with provided technology
+- Logistical requirements for provided deployment
+- Communication protocols between provided units
+## Essential Scenes
+- Deployment of provided forces
+- Operation of provided weapons under stress
+- Electronic warfare effects (if applicable)
+- Command decisions affecting provided outcome
+- Medical treatment matching provided casualties
+- Strategic assessment with provided results
+## Timeline Compliance
+- Use provided engagement duration exactly
+- Reference provided casualty figures accurately
+- Feature provided decisive factors
+- Reflect provided strategic lessons
+- End with provided significance to broader conflict
+## Expansion Techniques for Word Count
+- Include detailed dialogue between system operators
+- Describe step-by-step technical procedures
+- Add secondary characters supporting main personnel
+- Expand environmental descriptions at provided location
+- Include equipment challenges and recovery sequences
+- Add intelligence analysis and assessment scenes
+- Show maintenance and supply operations
+- Detail communication intercepts and analysis
+Build chronologically using provided timeline, focus all details on provided systems, ensure characters operate provided equipment only, and connect provided results to future warfare implications.
 
-## Critical Length Requirements
-- The scenario MUST be between 2000-2300 words - this is non-negotiable.  
-- Count every word carefully to ensure you meet this requirement.  
-- If your first draft is too short, expand with more tactical details, specific weapon descriptions, additional combat phases, and deeper analysis.  
-- Include extensive technical specifications, multiple engagement phases, detailed casualty reports, and comprehensive strategic analysis.  
-
-## Mandatory Data Integration Requirements
-- Date: [Insert specific date]  
-- Time: [Insert specific time]  
-- Location: [Insert location]  
-- Attacking side: [Insert attacking force]  
-- Defending side: [Insert defending force]  
-- Scale: [Insert scale]  
-- Key weapons: [Insert weapon systems]  
-
-**TIMELINE REQUIREMENTS:**  
-- Open with exact date and time: "On [DATE], at [TIME] local time..."  
-- Include clear time progression throughout the scenario.  
-- Use specific timestamps for major events (e.g., "At 06:45 local time...", "By 14:30...").  
-- Show battle duration clearly from start to finish.  
-
-## Output Format
-- Each sentence must be on a separate line.  
-- Use CAPITAL LETTERS only for key tactical terms, weapons, locations, and critical moments.  
-- Strategic capitalization - do not overuse.  
-- NO section headers in the output - pure narrative only.  
-- Start directly with the scenario using provided data.  
-
-## Content Development Strategy
-- Technical weapon specifications and performance data.  
-- Multiple engagement phases with specific timelines.  
-- Detailed casualty reports and equipment losses.  
-- Extensive tactical maneuvering descriptions.  
-- Electronic warfare and communications disruption.  
-- Supply chain and logistics complications.  
-- Weather and terrain impact on operations.  
-- Individual unit actions and heroic moments.  
-- Command decision-making processes.  
-- Intelligence gathering and reconnaissance details.  
-- Air support and helicopter operations.  
-- Medical evacuation and battlefield medicine.  
-- Engineering and demolition activities.  
-- Counter-intelligence and special operations.  
-- Post-battle analysis and lessons learned.  
-
-**Narrative phases to include:**  
-1. Initial intelligence and preparation (200-250 words)  
-2. Opening barrage and first contact (350-400 words)  
-3. Main assault and armored engagement (400-500 words)  
-4. Technology warfare and drone operations (300-400 words)  
-5. Electronic warfare and communications battle (250-300 words)  
-6. Decisive phase and turning point (300-350 words)  
-7. Aftermath and strategic implications (200-250 words)  
-8. Call-to-action conclusion with emotional impact  
-
-## Style Guidelines
-- **Sentence structure:** One complete sentence per line.  
-- **Capitalization:** For weapons, units, key tactical moments.  
-- **Tone:** Professional military analysis with dramatic battlefield narrative.  
-- **Perspective:** Third-person with tactical insight.  
-- **Pacing:** Build tension through escalating phases.  
-
-## Call-To-Action (CTA) Requirements
-You must integrate **multi-layered CTAs** throughout the script:  
-
-1. **Early Retention CTA (after the initial hook, ~150 words in):**  
-   - Invite the audience to comment and reflect.  
-   - Example: *"Before we continue, tell me where in the world you are watching from — and let’s step deeper into the battlefield."*  
-
-2. **Mid-battle CTA (after a turning point):**  
-   - Tie like/subscribe to emotion (pride, humanity, fear).  
-   - Example: *"Still watching? Good. Because what comes next isn’t just about firepower — it’s about survival. If you stand with those who fight against the odds, hit like and subscribe."*  
-
-3. **Optional Surprise CTA (during climax):**  
-   - Add urgency or patriotism.  
-   - Example: *"No mercy. No retreat. If you believe in strength and resilience, share this story so more people see the truth."*  
-
-4. **Final CTA (conclusion):**  
-   - Must combine 3 things:  
-     - A **thought-provoking question** about the future of warfare.  
-     - A **direct call to subscribe/share/comment**.  
-     - A **reference to [insert channel youtube]**.  
-   - Example:  
-     *"In an age of drones, cyber warfare, and shifting alliances, is the battlefield evolving faster than we can prepare for?  
-     This is [insert channel youtube] — subscribe, share, and join the discussion as we uncover the future of modern warfare."*  
-
-## Example Opening
-"On July 15th, 2025, at 04:17 AM local time, the silence over [LOCATION] was shattered.  
-RUSSIAN forces unleashed their opening BARRAGE against UKRAINIAN positions.  
-The battle for [LOCATION] had begun."  
-
-## Mandatory Progression
-- Use provided data as foundation for entire scenario.  
-- Build timeline around the specific date/time given.  
-- Reference attacking/defending forces exactly as provided.  
-- Feature specified weapons systems as key elements.  
-- Maintain chronological progression with clear timestamps.  
-- Every major phase must have specific time markers.  
 `;
 
 
