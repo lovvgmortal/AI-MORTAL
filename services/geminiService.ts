@@ -135,11 +135,10 @@ Factual and not misleading
 
 📋 Title Guidelines:
 
-Use action words, numbers, or power words when relevant
-Create curiosity or urgency without clickbait
-Focus on the most newsworthy or interesting aspect
-Consider what viewers would search for
-Match the tone appropriate for the content type
+- Under 70 characters (including spaces)
+- Contains primary keywords
+- Has a slight clickbait quality but not too much
+- Creates a curiosity gap
 
 📌 Expected Output:
 Output only the optimized title, no explanations or alternatives.
@@ -149,6 +148,14 @@ ${script}`;
 
     const summaryPrompt = `You are a script summarizer for any type of content across all topics and genres.
 Your task is to write a concise summary of the script below.
+
+- Paragraph 1: Strong hook (first 2-3 sentences)
+- Paragraph 2: Summary of main content
+- Paragraph 3: Call to action
+- Contains 3-5 relevant hashtags
+- Has natural keywords
+- Stimulates interaction
+
 ✅ Output Requirements:
 
 Output only one summary paragraph
@@ -158,16 +165,8 @@ Focus on main events, key points, timeline, and significance
 Do not include quotes, dialogue, or minor details
 Do not mention the existence of a script or that this is a summary
 
-🔐 Must Preserve:
-
-Key event(s) or main topic
-Who/what was involved
-Where and when it happened (if applicable)
-What the outcome or significance was
-Adapt these elements based on content type (news, education, entertainment, business, etc.)
-
 📌 Expected Output:
-A single paragraph of up to 120 words summarizing the script's key content, structured like a video description or intro narration.
+A single paragraph of up to 100 words summarizing the script's key content, structured like a video description or intro narration.
 
 🧾 Source Script:
 ${script}`;
